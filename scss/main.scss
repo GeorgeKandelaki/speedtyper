@@ -1,0 +1,164 @@
+$bg-color: rgba(0, 0, 0, 0.85);
+$color-white: #ffffff;
+$color-black: #000000;
+$color-cyan-normal-1: #00ffff;
+$color-green-normal-1: #086e08;
+$color-red-normal-1: #a00000;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+    @media (max-width: 56.25em) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "hermit" monospace;
+    background-color: $bg-color;
+    color: $color-black;
+
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    margin-top: 10rem;
+}
+
+.typer {
+    margin-top: 6.4rem;
+    background-color: $color-white;
+    padding: 1.5rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 2rem 3rem 4rem rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header {
+        display: flex;
+        gap: 9.6rem;
+
+        & > * {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    }
+
+    &__quote {
+        margin: 9.6rem 0;
+        padding: 2rem;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+}
+
+div[class^="curr"] {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.header {
+    &__text {
+        font-size: 3rem;
+    }
+}
+
+.wpm,
+.cpm,
+.errors,
+.timer,
+.accuracy {
+    background-color: $bg-color;
+    color: white;
+    padding: 2.5rem 4rem;
+    border-radius: 1rem;
+}
+
+.wpm {
+    .curr_wpm {
+    }
+}
+
+.cpm {
+    .curr_cpm {
+    }
+}
+
+.errors {
+    .curr_errors {
+    }
+}
+
+.timer {
+    .curr_time {
+    }
+}
+
+.accuracy {
+    .curr_accuracy {
+    }
+}
+
+.btn-restart {
+    color: $color-white;
+    font-weight: 600;
+    border: 2px solid $color-cyan-normal-1;
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    background-color: $bg-color;
+    transition: all 0.3s;
+
+    &:hover {
+        opacity: 0.5;
+        transform: translate(0, -10%);
+    }
+}
+
+.heading-main {
+    text-align: center;
+    color: $color-white;
+    font-size: 6rem;
+}
+
+.input {
+    resize: none;
+    align-self: stretch;
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    outline: none;
+    height: 10rem;
+
+    &:focus {
+        outline: 2px solid $color-cyan-normal-1;
+    }
+}
+
+.content--disable {
+    display: none;
+}
+
+.correct {
+    color: $color-green-normal-1;
+}
+
+.incorrect {
+    color: $color-red-normal-1;
+}

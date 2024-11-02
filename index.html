@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Typying Speed Test</title>
+        <link href="css/style.css" rel="stylesheet" />
+        <script defer src="js/index.js"></script>
+    </head>
+    <body>
+        <main class="main">
+            <h1 class="heading-main">Speed Typing Test</h1>
+            <div class="typer">
+                <header class="typer__header">
+                    <div class="wpm">
+                        <div class="header__text">WPM</div>
+                        <div class="curr_wpm">0</div>
+                    </div>
+
+                    <div class="cpm">
+                        <div class="header__text">CPM</div>
+                        <div class="curr_cpm">0</div>
+                    </div>
+
+                    <div class="errors">
+                        <div class="header__text">Errors</div>
+                        <div class="curr_errors">0</div>
+                    </div>
+
+                    <div class="timer">
+                        <div class="header__text">Time</div>
+                        <div class="curr_time">60s</div>
+                    </div>
+
+                    <div class="accuracy">
+                        <div class="header__text">Accuracy</div>
+                        <div class="curr_accuracy">100</div>
+                    </div>
+                </header>
+
+                <div class="typer__quote">Click On The Below Area to Start</div>
+                <textarea
+                    class="input"
+                    placeholder="Start Typing Here..."
+                    autocapitalize="off"
+                    autocomplete="off"
+                ></textarea>
+                <button class="btn-restart content--disable">Restart</button>
+            </div>
+        </main>
+    </body>
+</html>
